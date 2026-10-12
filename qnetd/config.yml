@@ -1,0 +1,14 @@
+name: Corosync QNetd
+version: "1.0.0"
+slug: qnetd
+description: Proxmox QDevice tie-breaker
+arch: [amd64]
+init: false
+startup: services
+boot: auto
+ports:
+  5403/tcp: 5403
+  22/tcp: 2222
+options: {}
+schema:
+  root_password: password?
